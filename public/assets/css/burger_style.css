@@ -1,0 +1,27 @@
+body {
+    background-color:#F5E36F;
+    min-height:100vh;
+}
+
+.main {
+    padding:20px;
+    text-align:center;
+    width:650px;
+}
+
+.devour {
+    border-radius:50px;
+    font-family:verdana;
+    font-weight:bold;
+}
+
+.devoured {
+    border-radius:50px;
+    color:lightgray;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}

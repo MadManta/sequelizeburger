@@ -1,0 +1,44 @@
+<br><br>
+
+
+<div class="uk-container uk-align-center main">
+
+<h1>eat da burgo</h1>
+<img src="assets/images/burger.jpg" width="150"><br>
+
+<table width="100%">
+<thead>
+  <tr>
+    <th>fresh</th>
+    <th>gawbage</th>
+  </tr>
+</thead>
+<tr>
+  <td width="50%">
+      {{#each burger}}
+        {{#unless devoured}}
+          {{> burgers/burg-block devoured=true}}
+        {{/unless}}
+      {{/each}}
+
+  </td>
+
+  <td width="50%">
+      {{#each burger}}
+        {{#if devoured}}
+          {{> burgers/burg-block devoured=false}}
+        {{/if}}
+      {{/each}}
+  </td>
+</tr>
+
+</table>
+<br><hr><br>
+<form class="create-form">
+    <label for="bu">Add a burger! &nbsp;</label>
+    <input type="text" id="bu" name="name"> <button type="button" id="add" class="devour"><i class="fas fa-plus-circle"></i></button>
+</form>
+<br><br>
+Clean Your Plate! &nbsp; 
+<button type="button" id="clear" class="devour"><i class="fas fa-trash-alt"></i></button>
+</div>
